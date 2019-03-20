@@ -1,5 +1,5 @@
 #define llong long long
-#define MOD
+#define MOD 1000000007
 llong add(llong A, llong  B){A+=B; while (A >= MOD) A-=MOD; return A;}
 llong mulInd(llong A, llong B)
     {
@@ -8,4 +8,5 @@ llong mulInd(llong A, llong B)
         if (B%2 == 1) rs=add(rs,A);
         return rs;
     }
-#endif
+#undef llong
+#undef MOD
